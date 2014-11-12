@@ -10,7 +10,7 @@ public abstract class Example {
 	/**
 	 * 待排序的数组
 	 */
-	public static Integer[] testIntegers = { 5, 3, 1, -9, 14, 24, 31, 30, 19, 22 };
+	public static Integer[] testIntegers = { 5, 3, 1, -9, 14, 24, 24, 30, 19, 22 };
 
 	/**
 	 * 比较(v是否小于w)
@@ -56,7 +56,7 @@ public abstract class Example {
 	 */
 	protected static boolean isSorted(Comparable[] a) {
 		for (int i = 0; i < a.length - 1; i++) {
-			if (!less(a[i], a[i + 1])) {
+			if (!less(a[i], a[i + 1]) && a[i] != a[i + 1]) {
 				return false;
 			}
 		}
