@@ -1,5 +1,6 @@
 package com.algorithms.sort;
 
+
 /**
  * 插入排序<br />
  * 概述：每一步都将一个待排数据按其大小插入到已经排序的数据中的适当位置，直到全部插入完毕。比较得少，换得多<br />
@@ -29,7 +30,7 @@ public class Insertion extends Example {
 	public static void main(String[] args) {
 		show(testIntegers);
 		System.out.println(isSorted(testIntegers));
-
+		
 		sort(testIntegers);
 
 		show(testIntegers);
